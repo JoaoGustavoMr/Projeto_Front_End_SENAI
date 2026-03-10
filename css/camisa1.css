@@ -1,0 +1,110 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#cd001b;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/* seção principal */
+.bg{
+    width:100%;
+    min-height:650px;
+    padding-top:40px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/* layout geral */
+.container{
+    display:flex;
+    align-items:center;
+    gap:60px;
+}
+
+/* card da imagem */
+.card-container{
+    width:300px;
+}
+
+.card{
+    width:300px;
+    height:500px;
+    border-radius:10px;
+    overflow:hidden;
+    transition:0.5s;
+}
+
+img{
+    border:1px solid white;
+    box-shadow:0 0 20px white;
+    border-radius:8px;
+}
+
+.card:hover{
+    transform:scale(1.05);
+    box-shadow:0 0 25px rgba(0,0,0,0.4);
+}
+
+/* caixa de texto */
+.box{
+    width:700px;
+    background:#ffffff;
+    padding:40px;
+    border-radius:6px;
+    color:white;
+    box-shadow:0 0 20px rgba(255,255,255,0.3);
+}
+
+/* título */
+h2{
+    text-align:center;
+    font-size:36px;
+    margin-bottom:20px;
+    font-style:italic;
+    position:relative;
+    display:inline-block;
+}
+
+/* efeito no título */
+h2::before{
+    content:attr(data-text);
+    position:absolute;
+    top:0;
+    left:0;
+    width:0;
+    overflow:hidden;
+    color:#faa331;
+    transition:0.5s;
+}
+
+h2:hover::before{
+    width:100%;
+}
+
+/* texto */
+p{
+    text-align:justify;
+    line-height:1.6;
+    margin-bottom:20px;
+}
+
+/* estrelas */
+.fa-star{
+    font-size:30px;
+    color:gold;
+    transition:0.3s;
+}
+
+.fa-star:hover{
+    transform:scale(1.2);
+}
+
+/* centralizar estrelas */
+.star-container{
+    text-align:center;
+}
