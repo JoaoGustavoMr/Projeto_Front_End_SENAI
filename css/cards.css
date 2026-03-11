@@ -80,15 +80,15 @@ body{
 }
 
 .card:nth-child(1):before{
-  background-image:url("./camisa_milan.jpg");
+  background-image:url("../img/camisa-milan.jpg");
 }
 
 .card:nth-child(2):before{
-  background-image:url("./real-camisa.jpeg");
+  background-image:url("../img/camisa-real.jpeg");
 }
 
 .card:nth-child(3):before{
-  background-image:url("./liverpool-camisa.webp");
+  background-image:url("../img/camisa-liverpool.webp");
 }
 
 .content{
@@ -188,10 +188,13 @@ body{
   }
 
 }
-.navbar{
-    box-shadow: 0 3px 10px rgba(0,0,0,0.6);
+/* Define a cor padrão para os links da navbar */
+.navbar .nav-link {
+    color: white !important;
 }
-.navbar .nav-link:hover{
+
+/* Mantém o seu efeito de hover que já existe */
+.navbar .nav-link:hover {
     color: #f8c146 !important;
 }
 
