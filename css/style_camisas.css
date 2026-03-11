@@ -1,86 +1,87 @@
 body{
-    background: linear-gradient(135deg, #111, #1c1c1c);
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
+background: linear-gradient(135deg, #111, #1c1c1c);
+font-family: Arial, Helvetica, sans-serif;
+color:white;
 }
 
 .navbar{
-    box-shadow: 0 3px 10px rgba(0,0,0,0.6);
+box-shadow:0 3px 10px rgba(0,0,0,0.6);
 }
 
-section{
-    border-bottom: 2px solid #333;
+.navbar .nav-link{
+color:white !important;
 }
 
-section img{
-    border-radius: 10px;
-    padding: 5px;
-    background-color: #000;
-    transition: 0.3s;
-}
-
-section img:hover{
-    transform: scale(1.05);
-    box-shadow: 0 0 20px rgba(255,255,255,0.4);
-}
-
-/* TÍTULO */
-h2{
-    font-weight: bold;
-    letter-spacing: 1px;
-}
-
-/* TEXTO */
-p{
-    font-size: 17px;
-    line-height: 1.6;
-}
-
-.fa-star{
-    font-size: 20px;
-    margin-right: 3px;
-}
-
-iframe{
-    border-radius: 10px;
-    border: 3px solid white;
-    box-shadow: 0 0 15px rgba(0,0,0,0.7);
-}
-
-footer{
-    margin-top: 40px;
-    font-size: 14px;
-    letter-spacing: 1px;
-    border-top: 2px solid #333;
-}
-
-/* Define a cor padrão para os links da navbar */
-.navbar .nav-link {
-    color: white !important;
-}
-
-/* Mantém o seu efeito de hover que já existe */
-.navbar .nav-link:hover {
-    color: #f8c146 !important;
+.navbar .nav-link:hover{
+color:#f8c146 !important;
 }
 
 .dropdown-menu{
-    background-color: #1a1a1a;
+background:#1a1a1a;
 }
 
 .dropdown-item{
-    color: white;
+color:white;
 }
 
 .dropdown-item:hover{
-    background-color: #ffffff;
+background:white;
+color:black;
 }
+
+section{
+border-bottom:2px solid #333;
+}
+
+.camisa-principal{
+max-width:350px;
+border-radius:10px;
+transition:0.3s;
+}
+
+.camisa-principal:hover{
+transform:scale(1.05);
+box-shadow:0 0 20px rgba(255,255,255,0.4);
+}
+
+h2{
+font-weight:bold;
+letter-spacing:1px;
+}
+
+p{
+font-size:17px;
+line-height:1.6;
+}
+
+.fa-star{
+font-size:20px;
+margin-right:3px;
+}
+
+.size-btn{
+margin-right:5px;
+margin-top:5px;
+}
+
+.size-btn:hover{
+background:#f8c146;
+color:black;
+border-color:#f8c146;
+}
+
+.size-active{
+background:#f8c146 !important;
+color:black !important;
+border-color:#f8c146 !important;
+}
+
 .video-container{
 position:relative;
-padding-bottom:56.25%;
-height:300px;
+padding-bottom:40%;
+height:0;
 overflow:hidden;
-max-width:900px;
+max-width:700px;
 margin:auto;
 }
 
@@ -89,10 +90,17 @@ position:absolute;
 top:0;
 left:0;
 width:100%;
-height:80%;
+height:100%;
 border-radius:10px;
+border:3px solid white;
 }
-/* ===== CARDS DESENVOLVEDORES ===== */
+
+footer{
+margin-top:40px;
+font-size:14px;
+letter-spacing:1px;
+border-top:2px solid #333;
+}
 
 .dev-card{
 background:#1a1a1a;
